@@ -6,7 +6,7 @@ class Accordion extends React.Component {
       }
    
     state = {
-      currentSection: null,
+      currentSection: null
     }
 
     handleClick = (index) => {
@@ -18,12 +18,12 @@ class Accordion extends React.Component {
         }
         else {
           this.setState({
-            currentSection: index,
+            currentSection: index
           });
         }
       }
 
-      render(){
+      render() {
 
         const buttons = this.props.sections.map((section, index) => (
     
